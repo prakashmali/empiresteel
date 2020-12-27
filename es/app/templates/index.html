@@ -7,10 +7,6 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Empire Steel</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
 
@@ -46,37 +42,42 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
+  
   <section id="hero" class="d-flex justify-cntent-center align-items-center">
+    
     <div id="heroCarousel" class="container carousel carousel-fade" data-ride="carousel">
-
+      
       <!-- Slide 1 -->
       <div class="carousel-item active">
+       <center> <img src="{% static 'assets/img/final_logo.png' %}" class="img-fluid" style="width: 40%;" alt=""></center> <br>
         <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Empire Steel</span></h2>
+          <!-- <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Empire Steel</span></h2> -->
           <p class="animate__animated animate__fadeInUp">We Are Manufacturer of  Stainless Steel Products Thats Are Used in Railing Fittings & Glass Fittings </p>
-          <p class="animate__animated animate__fadeInUp">Grade 202Q and 304Q with heavy and Light Quality depends on Customer Requirements </p>
-          <a href="tel:9724526974" class="btn-get-started animate__animated animate__fadeInUp">Call Us Now</a>
+          <!-- <p class="animate__animated animate__fadeInUp">Grade 202Q and 304Q with heavy and Light Quality depends on Customer Requirements </p> -->
+          <a href="tel:9724526974" class="btn-get-started animate__animated animate__fadeInUp"> &#128222; Call Us Now </a>
           
         </div>
       </div>
 
       <!-- Slide 2 -->
       <div class="carousel-item">
+        <center> <img src="{% static 'assets/img/final_logo.png' %}" class="img-fluid" style="width: 40%" alt=""></center> <br>
         <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Empire Steel</span></h2>
+          <!-- <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Empire Steel</span></h2> -->
           <p class="animate__animated animate__fadeInUp">हम स्टेनलेस स्टील उत्पादों के निर्माता हैं जो रेलिंग फिटिंग और ग्लास फिटिंग में उपयोग किया जाता है</p>
-          <p class="animate__animated animate__fadeInUp">भारी और हल्की गुणवत्ता के साथ ग्रेड 202 और 304 ग्राहक की आवश्यकताओं पर निर्भर करता है </p>
-          <a href="tel:9724526974" class="btn-get-started animate__animated animate__fadeInUp">Call Us Now</a>
+          <!-- <p class="animate__animated animate__fadeInUp">भारी और हल्की गुणवत्ता के साथ ग्रेड 202 और 304 ग्राहक की आवश्यकताओं पर निर्भर करता है </p> -->
+          <a href="tel:9724526974" class="btn-get-started animate__animated animate__fadeInUp"> &#128222; Call Us Now</a>
         </div>
       </div>
 
       <!-- Slide 3 -->
       <div class="carousel-item">
+        <center> <img src="{% static 'assets/img/final_logo.png' %}" class="img-fluid" style="width: 40%" alt=""></center> <br>
         <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Empire Steel</span></h2>
+          <!-- <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Empire Steel</span></h2> -->
           <p class="animate__animated animate__fadeInUp">ರೇಲಿಂಗ್ ಫಿಟ್ಟಿಂಗ್ ಮತ್ತು ಗ್ಲಾಸ್ ಫಿಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ಬಳಸಲಾಗುವ ಸ್ಟೇನ್‌ಲೆಸ್ ಸ್ಟೀಲ್ ಉತ್ಪನ್ನಗಳ ತಯಾರಕರು ನಾವು</p>
-          <p class="animate__animated animate__fadeInUp">ಗ್ರೇಡ್ ಮತ್ತು ಲೈಟ್ ಕ್ವಾಲಿಟಿ ಹೊಂದಿರುವ ಗ್ರೇಡ್ 202 ಕ್ಯೂ ಮತ್ತು 304 ಕ್ಯೂ ಗ್ರಾಹಕರ ಅವಶ್ಯಕತೆಗಳನ್ನು ಅವಲಂಬಿಸಿರುತ್ತದೆ </p>
-          <a href="tel:9724526974" class="btn-get-started animate__animated animate__fadeInUp">Call Us Now</a>
+          <!-- <p class="animate__animated animate__fadeInUp">ಗ್ರೇಡ್ ಮತ್ತು ಲೈಟ್ ಕ್ವಾಲಿಟಿ ಹೊಂದಿರುವ ಗ್ರೇಡ್ 202 ಕ್ಯೂ ಮತ್ತು 304 ಕ್ಯೂ ಗ್ರಾಹಕರ ಅವಶ್ಯಕತೆಗಳನ್ನು ಅವಲಂಬಿಸಿರುತ್ತದೆ </p> -->
+          <a href="tel:9724526974" class="btn-get-started animate__animated animate__fadeInUp"> &#128222; Call Us Now</a>
         
         </div>
       </div>
@@ -98,7 +99,39 @@
 
     <!-- ======= Services Section ======= -->
     <section class="services">
-      <div class="container">
+      <div class="container" >
+        <center>
+        <div class="row" >
+          
+              {% for obj in data %}
+              
+                 <div class="col-md-4" style="margin-bottom: 5%;">
+              <div class="card" style="width: 18rem;">
+                <img  src="{{obj.photo.url}}" class="card-img-top"  alt="..." >
+              <div class="card-body">
+         
+              <b> <h5 class="card-title" class="mainimage">{{ obj.title }}</h5></b>
+              <p class="card-text">{{ obj.description }}</p>
+              </div>
+            </div>
+            
+          
+        </div>
+      
+        {% endfor %}
+
+      </div>
+    </center>
+      <!-- <div class="container">
+
+        <div class="card" style="width: 18rem;">
+          <img src="{% static 'assets/img/pikot.jpg' %}" class="img-fluid" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Spigot</h5>
+            <p class="card-text">Spigot is used in glass fitting ! that will come in multiple sizes 4" 6" 8" inches</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
 
         <div class="row">
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up">
@@ -216,7 +249,7 @@
 
         </div>
 
-      </div>
+      </div> -->
     </section><!-- End Services Section -->
 
     <!-- ======= Why Us Section ======= -->
@@ -305,11 +338,11 @@
       </div>
       
     </div>
-  </footer><!-- End Footer -->
+  </footer>
 
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
-  <!-- Vendor JS Files -->
+  
   <script src="{% static 'assets/vendor/jquery/jquery.min.js' %}"></script>
   <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
   <script src="{% static 'assets/vendor/jquery.easing/jquery.easing.min.js' %}"></script>
